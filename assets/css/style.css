@@ -1,0 +1,124 @@
+/* Layout */
+.wine-nutrition-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.wine-nutrition-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.wine-nutrition-container .wine-nutrition-wrap:last-child {
+	align-items: flex-start;
+}
+
+/* Product image */
+.wine-nutrition-image {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.wine-nutrition-image img {
+	width: auto;
+	max-height: 350px;
+	margin-top: 30px;
+}
+
+/* Description */
+.wine-nutrition-description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.wine-nutrition-description h2 {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.wine-nutrition-description p {
+	font-size: 16px;
+	line-height: 1.6;
+	color: #666;
+}
+
+/* Nutrition table */
+.wine-nutrition-table {
+	width: 100%;
+	max-width: 600px;
+	border-collapse: collapse;
+	margin: 20px 0;
+	font-size: 16px;
+	text-align: left;
+	height: fit-content;
+}
+
+/* Extras / ingredients table */
+.wine-nutrition-extras-table {
+	width: 100%;
+	max-width: 600px;
+	margin-bottom: 50px;
+	text-align: left;
+}
+
+.wine-nutrition-table th,
+.wine-nutrition-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+.wine-nutrition-table th {
+	background-color: #f4f4f4;
+	font-weight: bold;
+}
+
+.wine-nutrition-table tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.wine-nutrition-table tr:hover {
+	background-color: #f1f1f1;
+}
+
+/* QR code preview (admin meta box) */
+.wine-nutrition-qr {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.wine-nutrition-qr img {
+	max-width: 200px;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.wine-nutrition-container {
+		flex-direction: column;
+	}
+
+	.wine-nutrition-table {
+		font-size: 14px;
+	}
+
+	.wine-nutrition-qr img {
+		max-width: 150px;
+	}
+
+	.wine-nutrition-wrap {
+		width: 100%;
+	}
+}
